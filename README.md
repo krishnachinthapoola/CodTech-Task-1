@@ -1,4 +1,4 @@
-![Screenshot 2024-08-15 231631](https://github.com/user-attachments/assets/12c7c2e5-220f-46f4-a93a-39dd3a9b62a4)# CodTech-Task-1
+# CodTech-Task-1
 Name: Vamshi Krishna Chinthapoola
 Company: CODTECH IT SOLUTIONS 
 ID: CT08DS5183
@@ -30,4 +30,7 @@ LabelEncoder & StandardScaler: Specific tools from Scikit-learn for encoding and
 Through this project, I gained a deeper understanding of the data preprocessing pipeline that is crucial before applying AI algorithms. I learned how to effectively clean a dataset by handling missing values and irrelevant data, transform categorical variables for machine learning, and scale numerical features to ensure consistency across the dataset. This experience has strengthened my skills in data processing, providing me with the foundational knowledge needed to prepare data for AI model training. Additionally, I now appreciate the importance of these preprocessing steps in achieving accurate and reliable model outcomes.
 
 Output:
-![Screenshot 2024-08-15 231608](https://github.com/user-attachments/assets/7a0869d6-a1a9-48a6-b0da-32261c3c5ce6)
+![Screenshot 2024-08-15 231608](https://github.com/user-attachments/assets/20f5718a-b25c-4c84-ac49-36fcac9b3d1e)
+![Screenshot 2024-08-15 231631](https://github.com/user-attachments/assets/ff38cfd8-0371-4800-be0d-ee9fe16eee3a)
+
+
