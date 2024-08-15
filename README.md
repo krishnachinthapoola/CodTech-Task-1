@@ -1,7 +1,6 @@
 # CodTech-Task-1
 Name: Vamshi Krishna Chinthapoola
 Company: CODTECH IT SOLUTIONS 
-Company: CODTECH IT SOLUTIONS
 ID: CT08DS5183
 Domain: Artificial Intelligence
 Duration: July to August 2024
