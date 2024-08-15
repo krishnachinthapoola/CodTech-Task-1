@@ -1,0 +1,35 @@
+/*CodTech Task One On Data Processing*/
+
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.model_selection import train_test_split
+
+# Step 1: Load the dataset
+url = 'https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv'
+df = pd.read_csv(url)
+print("Initial Dataset:\n", df.head())
+
+# Step 2: Data Cleaning
+print("\nMissing Values Before Cleaning:\n", df.isnull().sum())
+df['Age'].fillna(df['Age'].median(), inplace=True)
+df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
+df.drop(columns='Cabin', inplace=True)
+df.drop_duplicates(inplace=True)
+print("\nMissing Values After Cleaning:\n", df.isnull().sum())
+
+# Step 3: Data Transformation
+le = LabelEncoder()
+df['Sex'] = le.fit_transform(df['Sex'])
+df['Embarked'] = le.fit_transform(df['Embarked'])
+
+scaler = StandardScaler()
+df[['Age', 'Fare']] = scaler.fit_transform(df[['Age', 'Fare']])
+print("\nTransformed Dataset:\n", df.head())
+
+# Step 4: Data Preparation
+X = df.drop(columns=['Survived', 'Name', 'Ticket'])
+y = df['Survived']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+print(f"\nTraining Set Size: {X_train.shape}")
+print(f"Testing Set Size: {X_test.shape}")
