@@ -5,7 +5,7 @@ Name: Vamshi Krishna Chinthapoola,
  Domain: Artificial Intelligence, 
  Duration: July to August 2024.
 
-##Overview of the Project
+## Overview of the Project
 
 1) Project Title:
 Data Processing for AI Model Training
